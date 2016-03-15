@@ -1,0 +1,12 @@
+<% if proved_self %>
+  <div id="existing-user-edit-form">
+    <form method='post' action="/users/<%=@user.id%>">
+      <input type='hidden' name="_method" value="put">
+      <label>Username:</label>
+      <input type='text' name="user[username]" value="<%=@user.username%>">
+      <label>Email:</label>
+      <input type='text' name="user[email]" value="<%=@user.email%>">
+      <input type='submit' value="Update User Info">
+    </form>
+  </div>
+<% end %>

@@ -1,0 +1,30 @@
+#errors-container, #sessions-container{
+margin: 30px;
+padding: 10px;
+}
+
+#existing-user-edit-form-container{
+
+
+}
+
+#change-user-container{
+  margin-top: 100px;
+  width: 150px;
+  border: 5px solid black;
+  float: left;
+}
+#edit-user-link, #delete-user-button{
+  padding: 15px;
+}
+button-styled-as-link:focus {
+  outline: none;
+}
+
+.button-styled-as-link{
+  background-color: transparent;
+  text-decoration: underline;
+  border: none;
+  color: blue;
+  cursor: pointer;
+ }
