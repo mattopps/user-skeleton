@@ -7,10 +7,6 @@ helpers do
     @current_user ||= User.find_by(id: session[:user_id])
   end
 
-  # def authorize_access(object)
-  #   halt 403, "you are not authorized to perform this operation" unless logged_in? && current_user.id == object.user_id
-  # end
-
   def owned?(object)
     logged_in? && current_user.id == object.user_id
   end

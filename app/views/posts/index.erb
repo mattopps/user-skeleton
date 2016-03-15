@@ -1,9 +1,0 @@
-<div id="posts-list-container">
-<%if @posts %>
-  <%@posts.each do |post| %>
-  <a class="post-link" href="posts/<%=post.id%>"><%=post.title%></a> | ( <a class="post-author-link" href="users/<%=post.user.id%>"><%=post.user.username%></a>)<br>
-  <%end%>
-  <%end%>
-</div>
-
-<a id="create-posts-link" href="/posts/new">Create a New Post</a>
