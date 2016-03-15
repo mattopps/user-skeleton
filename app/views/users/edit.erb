@@ -3,7 +3,7 @@
     <form method='post' action="/users/<%=@user.id%>">
       <input type='hidden' name="_method" value="put">
       <label>Username:</label>
-      <input type='text' name="user[username]" value="<%=@user.username%>">
+      <input type='text' name="user[username]" value="<%=@user.username%>" autofocus>
       <label>Email:</label>
       <input type='text' name="user[email]" value="<%=@user.email%>">
       <input type='submit' value="Update User Info">
