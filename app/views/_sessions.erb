@@ -1,0 +1,12 @@
+<a href="/">Home</a>
+
+<div id="sessions-container">
+  <% if logged_in?%>
+    <form id="logout-link"  method='post' action="/logout">
+      <input type='hidden' name="_method" value="delete">
+      <input type='submit' class="button-styled-as-link" value="Logout">
+    </form>
+  <%else%>
+    <a id="login-link" href="/login">Login</a> | <a id="signup-link" href="/users/new">Sign Up</a>
+  <%end%>
+</div>

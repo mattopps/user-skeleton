@@ -1,0 +1,14 @@
+<h2 id="user-name"> <%=@user.username%>'s Profile Page</h2>
+
+<% if proved_self %>
+<div id="change-user-container">
+  <a id="edit-user-link" href="/users/<%=@user.id%>/edit">Edit User info</a>
+  <form id="delete-user-button"  method='post' action"/users/<%=@user.id%>">
+    <input type='hidden' name="_method" value="delete">
+    <input type='submit' class="button-styled-as-link" value="Delete This User">
+  </form>
+</div>
+<% end %>
+
+
+

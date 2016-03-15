@@ -1,0 +1,11 @@
+<div id="errors-container">
+  <%if @error%>
+    <h3> <%=@error%></h3>
+  <%end%>
+
+  <%if @errors%>
+    <%@errors.each do |error_message|%>
+    <h3><%=error_message%></h3>
+  <%end%>
+  <%end%>
+</div>
